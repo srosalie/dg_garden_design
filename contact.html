@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Dirt Girls Garden Design — St. Petersburg, FL</title>
+  <meta name="description" content="Get in touch with Dirt Girls Garden Design in St. Petersburg, FL. Request a consultation, design, or installation for your sustainable native-plant landscape.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ==================== Header ==================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html" aria-label="Dirt Girls Garden Design — home">
+        <img src="assets/images/logo.jpg" alt="Dirt Girls Garden Design logo" width="52" height="45">
+        <span class="site-header__logo-text">
+          Dirt Girls
+          <span>Garden Design</span>
+        </span>
+      </a>
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="primary-nav" data-open="false">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== Main content ==================== -->
+  <main id="main">
+
+    <!-- Page header — hero-garden background (cropped to upper portion) with light overlay.
+         Original green text colors preserved for readability. -->
+    <section class="page-header section--tint-green" aria-label="Contact">
+      <div class="container">
+        <p class="eyebrow">Contact Us</p>
+        <h1>Get in touch with Dirt Girls</h1>
+        <p>Tell us about your property and your vision. We'll help you design and install a sustainable, native-forward landscape- whatever that may look like.</p>
+      </div>
+    </section>
+
+    <section class="section section--paper" aria-label="Contact form and details">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="form-wrapper">
+            <h2 style="margin-bottom: var(--space-md);">Send a message</h2>
+            <!-- Contact form — submits to FormSubmit.co (no signup or backend required).
+                 First submission triggers a confirmation email to activate the endpoint. -->
+            <form class="form" id="contact-form" action="https://formsubmit.co/dirtgirlsdesigns@gmail.com" method="POST" novalidate>
+              <!-- FormSubmit hidden configuration fields -->
+              <input type="hidden" name="_subject" value="New inquiry from dirtgirlsgardendesign.com">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label" for="first-name">First name</label>
+                  <input class="form__input" type="text" id="first-name" name="first-name" autocomplete="given-name">
+                  <p class="form__error">Please enter your first name.</p>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="last-name">Last name</label>
+                  <input class="form__input" type="text" id="last-name" name="last-name" autocomplete="family-name">
+                  <p class="form__error">Please enter your last name.</p>
+                </div>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="email">Your email <span class="required">*</span></label>
+                <input class="form__input" type="email" id="email" name="email" autocomplete="email" required>
+                <p class="form__error">Please enter a valid email address.</p>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="phone">Phone</label>
+                <input class="form__input" type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="message">Message <span class="required">*</span></label>
+                <textarea class="form__textarea" id="message" name="message" required></textarea>
+                <p class="form__error">Please tell us a little about your project.</p>
+              </div>
+              <button class="button button--primary" type="submit">Send message</button>
+              <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <aside class="contact-info" aria-label="Contact details">
+            <h3>Reach us directly</h3>
+
+            <div class="contact-info__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <span class="contact-info__label">Service area</span>
+                <span class="contact-info__value">Saint Petersburg, FL<br>Southern Pinellas County</span>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-10 6L2 7"/>
+              </svg>
+              <div>
+                <span class="contact-info__label">Email</span>
+                <span class="contact-info__value"><a href="mailto:dirtgirlsdesigns@gmail.com">dirtgirlsdesigns@gmail.com</a></span>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <div>
+                <span class="contact-info__label">Phone</span>
+                <span class="contact-info__value"><a href="tel:+17277092843">727-709-2843</a></span>
+              </div>
+            </div>
+
+            <div>
+              <span class="contact-info__label" style="display:block; margin-bottom: var(--space-sm);">Follow along</span>
+              <!-- Replace hrefs below with the real Dirt Girls social media URLs -->
+              <div class="contact-social">
+                <a href="#" aria-label="Dirt Girls on Instagram">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+                  </svg>
+                </a>
+                <a href="#" aria-label="Dirt Girls on Facebook">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="assets/images/logo-removebg-preview.png" alt="Dirt Girls Garden Design">
+        <p>Woman-owned landscape design in St. Petersburg, FL. Sustainable, native-plant gardens that support local wildlife.</p>
+      </div>
+      <div>
+        <h2 class="site-footer__heading">Explore</h2>
+        <ul class="site-footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="site-footer__heading">Get in touch</h2>
+        <ul class="site-footer__links">
+          <li><a href="mailto:dirtgirlsdesigns@gmail.com">dirtgirlsdesigns@gmail.com</a></li>
+          <li><a href="tel:+17277092843">727-709-2843</a></li>
+          <li>Saint Petersburg, FL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <span>&copy; <span id="footer-year">2026</span> Dirt Girls Garden Design</span>
+      <span>Sustainable &middot; Native &middot; Woman-Owned</span>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js" defer></script>
+  <script src="js/contactForm.js" defer></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
