@@ -20,6 +20,7 @@
 
   /* Guard clause — bail early if this page has no contact form */
   if (!form) {
+    console.log('Form is null, Error.');
     return;
   }
 
@@ -99,19 +100,17 @@
 
   /**
    * Builds the FormData payload from the form.
-   * Hidden FormSubmit fields (_subject, _captcha, _template) are already
-   * in the HTML, so FormData picks them up automatically.
    */
   function buildFormData() {
     return new FormData(form);
   }
 
   /**
-   * Submits the form to FormSubmit.co via AJAX.
-   * FormSubmit responds with JSON when the Accept header is set.
+   * Submits the form to Web3Forms.
+   * Web3Forms responds with JSON when the Accept header is set.
    */
   async function submitForm() {
-    var response = await fetch(form.action, {
+    var response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       body: buildFormData(),
       headers: { Accept: 'application/json' }
