@@ -35,26 +35,26 @@ python -m http.server 8000
 
 ## Configuration
 
-### Contact form (FormSubmit.co)
+### Contact form (Web3Forms)
 
-The contact form submits to [FormSubmit.co](https://formsubmit.co) via AJAX,
+The contact form submits to [Web3Forms](https://web3forms.com) via AJAX,
 which forwards submissions directly to `dirtgirlsdesigns@gmail.com`. No signup
 or backend server is required.
-
-**Activation (one-time only):**
-
-The first time a visitor submits the form, FormSubmit sends a confirmation
-email to `dirtgirlsdesigns@gmail.com`. Click the link in that email to activate
-the endpoint. Subsequent submissions arrive immediately.
 
 The form's `action` is already configured in `contact.html`:
 
 ```html
-<form ... action="https://formsubmit.co/dirtgirlsdesigns@gmail.com" ...>
+<form ... action="https://api.web3forms.com/submit" ...>
+```
+The access key is provided as a hidden field in `contact.html`:
+
+```html
+<input type="hidden" name="access_key" value="8c0f2733-2ece-413c-acfc-e7cbd12ebd72">
 ```
 
-Hidden fields control the email subject, captcha, and template format. See
-`contactForm.js` for the AJAX submission logic.
+The access key is not secret — it is safe to expose in client-side code and acts as an alias for the delivery email address. It can be managed from the [Web3Forms dashboard](https://web3forms.com).
+
+The subject hidden field controls the email subject line. A hidden botcheck honeypot field provides basic spam protection. See `contactForm.js` for the AJAX submission logic.
 
 ### Social media links
 

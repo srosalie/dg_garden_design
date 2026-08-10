@@ -57,13 +57,12 @@
 
           <div class="form-wrapper">
             <h2 style="margin-bottom: var(--space-md);">Send a message</h2>
-            <!-- Contact form — submits to FormSubmit.co (no signup or backend required).
-                 First submission triggers a confirmation email to activate the endpoint. -->
-            <form class="form" id="contact-form" action="https://formsubmit.co/dirtgirlsdesigns@gmail.com" method="POST" novalidate>
+            <!-- Contact form — submits to Web3Forms (no backend required). -->
+            <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
               <!-- FormSubmit hidden configuration fields -->
-              <input type="hidden" name="_subject" value="New inquiry from dirtgirlsgardendesign.com">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="subject" value="New inquiry from dirtgirlsgardendesign.com">
+              <input type="hidden" name="access_key" value="8c0f2733-2ece-413c-acfc-e7cbd12ebd72">
+              <input type="checkbox" name="botcheck" style="display: none;">
               <div class="form__row">
                 <div class="form__field">
                   <label class="form__label" for="first-name">First name</label>
