@@ -766,6 +766,12 @@ p {
   margin-bottom: var(--space-sm);
 }
 
+.service__body h3 {
+  font-size: 1.3rem;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+}
+
 .service__list {
   margin: var(--space-sm) 0;
 }
